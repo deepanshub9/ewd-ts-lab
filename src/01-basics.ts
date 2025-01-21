@@ -20,6 +20,19 @@ const friends = [friend1, friend2];
 console.log(friends[1]);
 
 //   -------------------
+
+  
+// Declare the Colleague interface
+interface Colleague{
+    name: string;
+  department: string;
+  contact: {
+    email: string;
+    extension: number;
+};
+}
+
+
 const colleague1 = {
   name: "Ralph Graham",
   department: "Engineering",
@@ -46,9 +59,10 @@ const colleague3 = {
     extension: 125,
   },
 };
+
 const colleagues = {
-  current: [colleague1, colleague2, colleague3],
-  former: [],
-};
+    current: [colleague1, colleague2, colleague3],
+    former: [],
+  };
 
 console.log(colleagues.current[0]);
