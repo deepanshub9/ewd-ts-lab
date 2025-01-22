@@ -1,7 +1,4 @@
 
-
-
-
 export interface Friend {
     name: string;
     phone: string;
@@ -21,3 +18,9 @@ export interface ColleagueHistory {
   current: Colleague[],
   former: Colleague[]
 }
+
+export interface EmailContact {
+    name: string;
+    email: string;
+  }
+  
