@@ -70,16 +70,13 @@ console.log(
   findBuddyContact(myFootballBuddies, "Ralph Graham")
 );
 
-
-
 function getBuddyListFriends(list: BuddyList): Friend[] {
-    return list.members.reduce((acc: Friend[], buddy) => {
-      if ("phone" in buddy) {
-        acc.push(buddy);
-      }
-      return acc;
-    }, []);
-  }
-  
-  console.log(getBuddyListFriends(myFootballBuddies));
-  
+  return list.members.reduce((acc: Friend[], buddy) => {
+    if ("phone" in buddy) {
+      acc.push(buddy);
+    }
+    return acc;
+  }, []);
+}
+
+console.log(getBuddyListFriends(myFootballBuddies));
